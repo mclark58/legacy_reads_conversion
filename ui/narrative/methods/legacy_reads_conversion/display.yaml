@@ -1,0 +1,64 @@
+#
+# Define basic display information
+#
+name     : Convert Legacy Reads to new Reads type 
+tooltip  : |
+    The legacy reads include objects of type KBaseAssembly.SingleEndReads and KBaseAssembly.PairedEndReads.
+    These types have been updated to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads respectively.
+    This App provides users a way to convert from legacy object types to new object types.
+
+screenshots :
+    []
+
+icon: 
+
+replacement-text : Convert Legacy Reads to new Reads type
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    read_library_name:
+        ui-name : |
+            Legacy reads
+        short-hint : |
+            Legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads
+    sequencing_tech:
+        ui-name : |
+           Sequencing technology 
+        short-hint : |
+           Sequencing technology
+    single_genome:
+        ui-name : |
+           Single genome 
+        short-hint : |
+           Single genome 
+    output:
+        ui-name : |
+            Converted reads 
+        short-hint : |
+            Converted reads of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads
+
+
+description : |
+   <p>This method converts legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads respectively.</p>
+   <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Priya Ranjan</p>
+    
+publications :

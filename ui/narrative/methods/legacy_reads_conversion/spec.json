@@ -1,0 +1,126 @@
+{
+	"ver" : "1.0.1",
+	"authors" : [ ],
+	"contact" : "help@kbase.us",
+	"visible" : true,
+	"categories" : ["active"],
+	"widgets" : {
+		"input" : null,
+		"output" : "no-display"
+	},
+	"parameters" : [ 
+		{
+			"id" : "read_library_name",
+			"optional" : false,
+			"advanced" : false,
+			"allow_multiple" : false,
+			"default_values" : [ "" ],
+			"field_type" : "text",
+			"text_options" : {
+				"valid_ws_types" : [ "KBaseAssembly.SingleEndLibrary", "KBaseAssembly.PairedEndLibrary" ]
+			}
+		},
+{
+    "id" : "sequencing_tech",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "Illumina" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "Illumina",
+          "display": "Illumina",
+          "id": "Illumina",
+          "ui_name": "Illumina"
+        },
+        {
+          "value": "Unknown",
+          "display": "Unknown",
+          "id": "Unknown",
+          "ui_name": "Unknown"
+        }
+      ]
+    }
+},
+
+		{
+			"id": "single_genome",
+			"optional":false,
+			"advanced":false,
+			"allow_multiple":false,
+			"default_values":["1"],
+			"field_type" : "checkbox",
+			"checkbox_options":{
+				"checked_value": 1,
+				"unchecked_value": 0
+			}
+		},
+		{
+			"id" : "output",
+			"optional" : false,
+			"advanced" : false,
+			"allow_multiple" : false,
+			"default_values" : [ "" ],
+			"field_type" : "text",
+			"text_options" : {
+				"valid_ws_types" : [ "KBaseFile.SingleEndLibrary", "KBaseFile.PairedEndLibrary" ],
+				"is_output_name":true
+			} 
+		}
+	],
+	"behavior" : {
+		"service-mapping" : {
+			"url" : "",
+			"name" : "legacy_reads_conversion",
+			"method" : "run_legacy_reads_conversion",
+			"input_mapping" : [
+				{
+					"narrative_system_variable": "workspace",
+					"target_property": "workspace_name"
+				},
+				{
+					"input_parameter": "read_library_name",
+					"target_property": "read_library_name"
+				},
+				{
+					"input_parameter": "sequencing_tech",
+					"target_property": "sequencing_tech"
+				},
+
+				{
+					"input_parameter": "single_genome",
+					"target_property": "single_genome"
+				},
+				{
+					"input_parameter": "output",
+					"target_property": "output"
+				}
+			],
+
+			"output_mapping": [
+				{
+					"service_method_output_path": [0,"report_name"],
+					"target_property": "report_name"
+				},
+				{
+					"service_method_output_path": [0,"report_ref"],
+					"target_property": "report_ref"
+				},
+				{
+					"constant_value": "20",
+					"target_property": "report_window_line_height"
+				},
+				{
+					"narrative_system_variable": "workspace",
+					"target_property": "workspace_name"
+				}
+			]
+		}
+	},
+	"job_id_output_field": "docker"
+}
+
+
+
