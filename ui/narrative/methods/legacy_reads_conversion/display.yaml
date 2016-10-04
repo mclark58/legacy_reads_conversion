@@ -1,10 +1,11 @@
 #
 # Define basic display information
 #
-name     : Convert Legacy Reads to new Reads type 
+name     : Convert Legacy Read Library to New Read Library
 tooltip  : |
-    The legacy reads include objects of type KBaseAssembly.SingleEndReads and KBaseAssembly.PairedEndReads.
-    These types have been updated to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads respectively.
+    Convert legacy read library objects types to new read library object types
+    The legacy read libraries are objects of type KBaseAssembly.SingleEndReads and KBaseAssembly.PairedEndReads.
+    The new way of storing read libraries are objects of type KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads. 
     This App provides users a way to convert from legacy object types to new object types.
 
 screenshots :
@@ -12,7 +13,7 @@ screenshots :
 
 icon: 
 
-replacement-text : Convert Legacy Reads to new Reads type
+replacement-text : Convert legacy read library to new read library 
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -36,24 +37,24 @@ suggestions :
 parameters :
     read_library_name:
         ui-name : |
-            Legacy reads
+            Legacy Read Library
         short-hint : |
-            Legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads
+            Name of legacy read library of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads 
     sequencing_tech:
         ui-name : |
-           Sequencing technology 
+           Sequencing Technology 
         short-hint : |
-           Sequencing technology
+           Sequencing technology used to generate the reads
     single_genome:
         ui-name : |
-           Single genome 
+           Single Genome 
         short-hint : |
            Single genome 
     output:
         ui-name : |
-            Converted reads 
+            Converted Read Library 
         short-hint : |
-            Converted reads of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads
+            Name of converted read library of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads
 
 
 description : |
