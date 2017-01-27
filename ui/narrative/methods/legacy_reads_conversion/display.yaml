@@ -3,10 +3,7 @@
 #
 name     : Convert Legacy Read Library to New Read Library
 tooltip  : |
-    Convert legacy read library objects types to new read library object types
-    The legacy read libraries are objects of type KBaseAssembly.SingleEndReads and KBaseAssembly.PairedEndReads.
-    The new way of storing read libraries are objects of type KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads. 
-    This App provides users a way to convert from legacy object types to new object types.
+    Convert legacy read library objects types to the latest version of read library object types
 
 screenshots :
     []
