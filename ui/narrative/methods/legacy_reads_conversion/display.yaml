@@ -8,9 +8,9 @@ tooltip  : |
 screenshots :
     []
 
-icon: 
+icon:
 
-replacement-text : Convert legacy read library to new read library 
+replacement-text : Convert legacy read library to new read library
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -36,20 +36,20 @@ parameters :
         ui-name : |
             Legacy Read Library
         short-hint : |
-            Name of legacy read library of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads 
+            Name of legacy read library of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads
     sequencing_tech:
         ui-name : |
-           Sequencing Technology 
+           Sequencing Technology
         short-hint : |
            Sequencing technology used to generate the reads
     single_genome:
         ui-name : |
-           Single Genome 
+           Single Genome
         short-hint : |
-           Single genome 
+           Single genome
     output:
         ui-name : |
-            Converted Read Library 
+            Converted Read Library
         short-hint : |
             Name of converted read library of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads
 
@@ -58,5 +58,9 @@ description : |
    <p>This method converts legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads respectively.</p>
    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Priya Ranjan</p>
-    
+
 publications :
+    -
+        display-text: |
+            Arkin AP, Cottingham RW, Henry CS, Harris NL, Stevens RL, Maslov S, et al. KBase: The United States Department of Energy Systems Biology Knowledgebase. Nature Biotechnology. 2018;36: 566. doi: 10.1038/nbt.4163
+        link: https://www.nature.com/articles/nbt.4163
