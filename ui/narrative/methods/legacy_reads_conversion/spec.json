@@ -1,9 +1,9 @@
 {
 	"ver" : "1.0.1",
-	"authors" : [ ],
-	"contact" : "help@kbase.us",
+	"authors" : [ "pranjan77"],
+	"contact" : "http://kbase.us/contact-us",
 	"visible" : true,
-	"categories" : ["active"],
+	"categories" : ["active","reads"],
 	"widgets" : {
 		"input" : null,
 		"output" : "no-display"
