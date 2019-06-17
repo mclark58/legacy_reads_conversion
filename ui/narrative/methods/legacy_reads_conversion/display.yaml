@@ -3,14 +3,14 @@
 #
 name     : Convert Legacy Read Library to New Read Library
 tooltip  : |
-    Convert legacy read library objects types to the latest version of read library object types
+    Convert legacy read library object types to the latest version of read library object types.
 
 screenshots :
     []
 
 icon:
 
-replacement-text : Convert legacy read library to new read library
+replacement-text : Convert legacy read library to a new read library.
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -36,28 +36,28 @@ parameters :
         ui-name : |
             Legacy Read Library
         short-hint : |
-            Name of legacy read library of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads
+            The name of the legacy read library of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads.
     sequencing_tech:
         ui-name : |
            Sequencing Technology
         short-hint : |
-           Sequencing technology used to generate the reads
+           The sequencing technology used to generate the reads.
     single_genome:
         ui-name : |
            Single Genome
         short-hint : |
-           Single genome
+           Single genome.
     output:
         ui-name : |
             Converted Read Library
         short-hint : |
-            Name of converted read library of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads
+            The name of the converted read library of type KBaseFiles.SingleEndReads or KBaseFiles.PairedEndReads.
 
 
 description : |
-   <p>This method converts legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads respectively.</p>
-   <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-    Priya Ranjan</p>
+   <p>This App converts legacy reads of type KBaseAssembly.SingleEndReads or KBaseAssembly.PairedEndReads to KBaseFiles.SingleEndReads and KBaseFiles.PairedEndReads, respectively.</p>
+
+   <p><strong>Team members who developed & deployed algorithm in KBase:</strong> Priya Ranjan. For questions, please <a href=”http://kbase.us/contact-us/”>contact us</a>.</p>
 
 publications :
     -
